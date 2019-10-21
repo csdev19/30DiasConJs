@@ -1,0 +1,52 @@
+:root {
+    --color-btn: white;
+    --w-btn: 60px;
+    --h-btn: 80px;
+    --opacity-btn: 0.8;
+}
+
+body {
+    background-image: url("./assets/image.jpg");
+}
+
+#main-container {
+    display: flex;
+    height: 100vh;
+}
+
+.keyboard-container {
+    display: flex;
+    margin: auto;
+}
+
+/* .grid {
+    --grid-columns: 20px 20px 20px 20px 20px;
+} 
+
+.grid {
+    display: grid;
+    grid-column: 10;
+    grid-auto-rows: 20px;
+    grid-gap: 10px;
+    justify-content: center;
+} */
+
+.key {
+    background-color: var(--color-btn);
+     height:  var(--h-btn);
+    width:  var(--w-btn);
+    margin-left: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: var(--opacity-btn);   
+}
+
+.pressed {
+    --h-btn: 80px;
+    --w-btn: 70px;
+    --color-btn: cyan;  
+    --opacity-btn: 0.9;
+}
+
